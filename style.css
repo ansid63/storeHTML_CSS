@@ -11,10 +11,11 @@ body {
 	list-style: none;
 }
 
-.menu li a {
+.menu li a,
+.menu2 li a {
 	/*text-decoration: none;*/
 	text-decoration-line: none;
-  	text-decoration-color: #24221A;
+  	color: #24221A; /* меню без форматирования */
 }
 
 h3 {
@@ -81,4 +82,36 @@ textarea {
     background-color: gray;
     color: white;
     resize: none;  
+}
+
+.bottom {
+	color: #484343;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+
+
+
+#exp:hover {
+    background-color: #C0C0C0;
+    }
+    
+#exp {
+    position: relative;
+    display: inline-block;
+}
+.drop {
+    display: none;
+    background-color: white;
+    min-width: 200px;
+}
+.drop li a {
+    color: #24221A;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+#exp:hover .drop {
+    display: block;
 }
