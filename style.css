@@ -84,14 +84,14 @@ textarea {
     resize: none;  
 }
 
-.bottom {
+.footer {
 	color: #484343;
 	font-size: 10px;
 	font-weight: 400;
 }
 
 
-
+/*ниже выпадающее меню*/
 
 #exp:hover {
     background-color: #C0C0C0;
