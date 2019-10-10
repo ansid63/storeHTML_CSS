@@ -5,16 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-	<ul class="menu">
-		<li><a href="../index.html">Главная</a></li>
-		<li><a href="../contacts.html">Контакты</a></li>
-		<li id="exp"><a href="../catalog.html">Каталог</a>
-			<ul class = "menu2">
-				<li class="drop"><a href="order1.html">Горячее предложение 1</a></li>
-				<li class="drop"><a href="order2.html">Горячее предложение 2</a></li>
-			</ul>
-		</li>
-	</ul>
+	<div class="header">
+		<ul class="menu">
+			<li><a href="../index.html">Главная</a></li>
+			<li><a href="../contacts.html">Контакты</a></li>
+			<li id="exp"><a href="../catalog.html">Каталог</a>
+				<ul class = "menu2">
+					<li class="drop"><a href="order1.html">Горячее предложение 1</a></li>
+					<li class="drop"><a href="order2.html">Горячее предложение 2</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div id="logo_dog">
+			<img src="../img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+		</div>
+	</div>
+	</header>
 	<h1>Милые&nbsp;кости</h1>
 	<br><a href="../img/logo.jpg" target="_blank"><img src="../img/logo.jpg" alt="logo" height=80px width=100px></a>
 	<!--  -->
@@ -27,7 +33,36 @@
 		<li>Существенное содержание кальция укрепляет кости и&nbsp;зубы собаки. 100%- натуральный состав и&nbsp;отсутствие любых искусственных ингридиентов способствует легкому усваиванию.</li> 
 		<li>Для собак от&nbsp;10 до&nbsp;25&nbsp;кг.</li>
 	</ul>
+	<!-- таблица -->
+	<table class="about">
+		<tr>
+			<td rowspan="4" id="mergeVer">Кости в наличии</td>
+			<td colspan="4" id="mergeHor">Размеры</td>
+		</tr>
+		<tr>
+			<td>S</td>
+			<td>S</td>
+			<td>S</td>
+			<td>S</td>
+			
+		</tr>
+		<tr>
+			<td>M</td>
+			<td>M</td>
+			<td>M</td>
+			<td>M</td>
+		</tr>
+		<tr>
+			<td>L</td>
+			<td>L</td>
+			<td>L</td>
+			<td>L</td>
+		</tr>
+	</table>
+
 	<hr>
-	<p class="footer">Все права защищены &copy;.&nbsp;</p>
+	<div class="footer">
+	<p>Все права защищены &copy;.&nbsp;</p>
+	</div>
 </body>
 </html>

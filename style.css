@@ -3,20 +3,49 @@ body {
 
 }
 
+.header{
+	height: 150px;
+}
+
+.footer {
+	color: #484343;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+
+/*меню и лого*/
 .menu {
 	font-size: 18px; 
 	font-weight: bold;
 	text-transform:uppercase;
 	font-family: Verdana, Arial, sans-serif;
 	list-style: none;
+	position: relative;
+}
+
+#logo_dog {
+	position: absolute;
+	margin-left: 720px;
+	margin-top: -120px;
 }
 
 .menu li a,
 .menu2 li a {
-	/*text-decoration: none;*/
 	text-decoration-line: none;
   	color: #24221A; /* меню без форматирования */
 }
+
+
+.menu li a:active {
+	color: #8842d5;
+}
+
+.menu2 li a:active {
+	color: #8842d5;
+}
+
+/*конец меню и лого*/
 
 h3 {
 	color: black;
@@ -42,13 +71,29 @@ h3 {
 	list-style-image: url(img/boolet.jpg);
 }
 
+.addon li:first-letter {
+	font-size: 18px;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*рамка фото товар +/- */
+img[alt="logo"] {
+	outline: 1px solid #ADACA7; /* графитовая рамка */
+}
+
 img[alt="logo"]:hover {
+	outline: none; 
+}
+
+img[alt="utk"] {
 	outline: 1px solid #ADACA7; /* графитовая рамка */
 }
 
 img[alt="utk"]:hover {
-	outline: 1px solid #ADACA7; /* графитовая рамка */
+	outline: none; 
 }
+
+/*поля ввода*/
 
 input[type=text] {
     width: 30%;
@@ -72,6 +117,8 @@ input[type=button], input[type=reset], input[type=submit] {
     cursor: pointer;  
 }
 
+ #upperLetter:valid { text-transform: capitalize; }
+
 textarea {
     width: 50%;
     height: 200px;
@@ -84,19 +131,20 @@ textarea {
     resize: none;  
 }
 
-.footer {
-	color: #484343;
-	font-size: 10px;
-	font-weight: 400;
-}
 
 
-/*ниже выпадающее меню*/
+/*анимация меню*/
+
+.menu li a:hover {
+    background-color: #C0C0C0;
+    }
+
+/*анимация ниже выпадающего меню*/
 
 #exp:hover {
     background-color: #C0C0C0;
-    }
-    
+ }
+
 #exp {
     position: relative;
     display: inline-block;
@@ -105,6 +153,7 @@ textarea {
     display: none;
     background-color: white;
     min-width: 200px;
+
 }
 .drop li a {
     color: #24221A;
@@ -114,4 +163,33 @@ textarea {
 }
 #exp:hover .drop {
     display: block;
+}
+
+
+/*таблицы*/
+
+.about {
+	border: 1px solid #000;
+	width: 400px;
+	height: 200px;
+	border-collapse: collapse;
+}
+
+.about td {
+	border: 1px solid #000;
+	vertical-align: top;
+	padding: 10px;
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+#mergeVer {
+	max-width: 100px;
+}
+
+
+#mergeHor {
+	height: 70px;
 }
