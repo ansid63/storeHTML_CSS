@@ -6,18 +6,24 @@
 </head>
 <body>
 	<div class="header">
-		<ul class="menu">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="contacts.html">Контакты</a></li>
-			<li id="exp"><a href="catalog.html">Каталог</a>
+		<div class="container">
+			<div id="logo_dog">
+				<a href="index.html"><img src="img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+			</div>
+			<div class="rightmenu">
 				<ul class="menu">
-					<li class="drop"><a href="catalog/order1.html">Горячее предложение 1</a></li>
-					<li class="drop"><a href="catalog/order2.html">Горячее предложение 2</a></li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li id="exp"><a href="catalog.html">Каталог</a>
+					
+						<ul class = "menu2">
+							<li class="drop"><a href="catalog/order1.html">Горячее предложение 1</a></li>
+							<li class="drop"><a href="catalog/order2.html">Горячее предложение 2</a></li>
+						</ul>	
+					
+					</li>				
 				</ul>
-			</li>
-		</ul>
-		<div id="logo_dog">
-			<img src="img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+			</div>
 		</div>
 	</div>
 	<br>
@@ -25,13 +31,19 @@
 	<hr>
 	<h1>Каталог</h1>
 	<br>
-	<img src="img/logo_small.jpg" alt="logo"> 
-	<br>
-	<a href="catalog/order1.html" style="color: #24221A; text-decoration-line: none;">Милые кости</a> 
-	<br>
-	<img src="img/utk_small.jpg" alt="utk"> 
-	<br>
-	<a href="catalog/order2.html" style="color: #24221A; text-decoration-line: none;">Номордник</a>
+	<div class="stuffMain">
+		<div class="stuff1">	
+			<img src="img/logo_small.jpg" alt="logo">
+			<br>
+			<a href="catalog/order1.html" style="color: #24221A; text-decoration-line: none;">Милые кости</a> 
+		</div>
+		
+		<div class="stuff2">	
+			<img src="img/utk_small.jpg" alt="utk"> 
+			<br>
+			<a href="catalog/order2.html" style="color: #24221A; text-decoration-line: none;">Номордник</a>
+		</div>
+	</div>
 	<hr>
 	
 	<div class="footer">

@@ -6,24 +6,33 @@
 </head>
 <body>
 	<div class="header">
-		<ul class="menu">
-			<li><a href="../index.html">Главная</a></li>
-			<li><a href="../contacts.html">Контакты</a></li>
-			<li id="exp"><a href="../catalog.html">Каталог</a>
-				<ul class = "menu2">
-					<li class="drop"><a href="order1.html">Горячее предложение 1</a></li>
-					<li class="drop"><a href="order2.html">Горячее предложение 2</a></li>
+		<div class="container">
+			<div id="logo_dog">
+				<a href="../index.html"><img src="../img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+			</div>
+			<div class="rightmenu">
+				<ul class="menu">
+					<li><a href="../index.html">Главная</a></li>
+					<li><a href="../contacts.html">Контакты</a></li>
+					<li id="exp"><a href="../catalog.html">Каталог</a>
+					
+						<ul class = "menu2">
+							<li class="drop"><a href="order1.html">Горячее предложение 1</a></li>
+							<li class="drop"><a href="order2.html">Горячее предложение 2</a></li>
+						</ul>	
+					
+					</li>				
 				</ul>
-			</li>
-		</ul>
-		<div id="logo_dog">
-			<img src="../img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+			</div>
 		</div>
 	</div>
+	</header>
 	<h1>Номордник</h1>
 	<a href="../img/utk.jpg" target="_blank"><img src="../img/utk.jpg" alt="utk" height=80px width=100px></a>
-	<h3>Описание товара</h3>
-	<p id="prew">Номордник для собак силиконовый "Уточка"</p>
+	<div class="qprew">
+		<h3>Описание товара</h3>
+		<p id="prew">Номордник для собак силиконовый "Уточка"</p>
+	</div>
 	<h3>Характеристики товара</h3>
 	<ul class="addon">
 		<li>Оригинальный намордник из силикона.</li> 
@@ -32,6 +41,12 @@
 		<li>Размер M = обхват морды 15 см, длина ремешка до 33 см.</li> 
 		<li>Размер  L = обхват морды 16 см, длина ремешка до 35 см.</li>
 	</ul>
+	<br>
+	<form action="#">
+		Введите количество необходимого товара <input type="number" placeholder="Количество цифрами"> <br>
+		<input type="submit" value="Купить" id="makeOrder">
+	</form>
+	<br>
 	<!-- таблица -->
 	<table class="about">
 		<tr>
@@ -61,7 +76,7 @@
 
 	<hr>
 	<div class="footer">
-	<p>Все права защищены &copy;.&nbsp;</p>
+		<p>Все права защищены &copy;.&nbsp;</p>
 	</div>
 </body>
 </html>

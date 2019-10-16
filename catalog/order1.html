@@ -6,26 +6,34 @@
 </head>
 <body>
 	<div class="header">
-		<ul class="menu">
-			<li><a href="../index.html">Главная</a></li>
-			<li><a href="../contacts.html">Контакты</a></li>
-			<li id="exp"><a href="../catalog.html">Каталог</a>
-				<ul class = "menu2">
-					<li class="drop"><a href="order1.html">Горячее предложение 1</a></li>
-					<li class="drop"><a href="order2.html">Горячее предложение 2</a></li>
+		<div class="container">
+			<div id="logo_dog">
+				<a href="../index.html"><img src="../img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+			</div>
+			<div class="rightmenu">
+				<ul class="menu">
+					<li><a href="../index.html">Главная</a></li>
+					<li><a href="../contacts.html">Контакты</a></li>
+					<li id="exp"><a href="../catalog.html">Каталог</a>
+					
+						<ul class = "menu2">
+							<li class="drop"><a href="order1.html">Горячее предложение 1</a></li>
+							<li class="drop"><a href="order2.html">Горячее предложение 2</a></li>
+						</ul>	
+					
+					</li>				
 				</ul>
-			</li>
-		</ul>
-		<div id="logo_dog">
-			<img src="../img/dog.png" alt="logo_dog" height=200px width=200px;></a>
+			</div>
 		</div>
 	</div>
 	</header>
 	<h1>Милые&nbsp;кости</h1>
 	<br><a href="../img/logo.jpg" target="_blank"><img src="../img/logo.jpg" alt="logo" height=80px width=100px></a>
 	<!--  -->
-	<h3>Описание&nbsp;товара</h3>
-	<p id="prew">Зубочистики говяжьи для собак средних&nbsp;пород</p>
+	<div class="qprew">
+		<h3>Описание&nbsp;товара</h3>
+		<p id="prew">Зубочистики говяжьи для собак средних&nbsp;пород</p>
+	</div>
 	<h3>Характеристики&nbsp;товара</h3>
 	<ul class="addon">
 		<li>Зубочистики&nbsp;— лучшие лакомства для чистки зубов, отлично снимают зубной налет, предотвращают появление зубного камня, и&nbsp;борятся с&nbsp;болезнями десен.</li>
@@ -33,6 +41,12 @@
 		<li>Существенное содержание кальция укрепляет кости и&nbsp;зубы собаки. 100%- натуральный состав и&nbsp;отсутствие любых искусственных ингридиентов способствует легкому усваиванию.</li> 
 		<li>Для собак от&nbsp;10 до&nbsp;25&nbsp;кг.</li>
 	</ul>
+	<br>
+	<form action="#">
+		Введите количество необходимого товара <input type="number" placeholder="Количество цифрами"> <br>
+		<input type="submit" value="Купить" id="makeOrder">
+	</form>
+	<br>
 	<!-- таблица -->
 	<table class="about">
 		<tr>
@@ -62,7 +76,7 @@
 
 	<hr>
 	<div class="footer">
-	<p>Все права защищены &copy;.&nbsp;</p>
+		<p>Все права защищены &copy;.&nbsp;</p>
 	</div>
 </body>
 </html>
